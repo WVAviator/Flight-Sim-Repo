@@ -397,8 +397,6 @@
 "Assets/Scripts/UI Controller Scripts/UIControllerTerra.cs"
 "Assets/Scripts/UI Controller Scripts/UIControllerThanatos.cs"
 "Assets/Scripts/UI Controller Scripts/UIControllerWraith.cs"
-"Assets/Scripts/WanderState.cs"
-"Assets/Scripts/WanderStateBase.cs"
 -langversion:8.0
 
 /deterministic
