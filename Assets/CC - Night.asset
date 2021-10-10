@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a3bdb2cd68f901469e7cc149151eb49, type: 3}
-  m_Name: CC
+  m_Name: CC - Night
   m_EditorClassIdentifier: 
   debugViews:
     m_Enabled: 1
@@ -89,7 +89,7 @@ MonoBehaviour:
       lowPercent: 49.00001
       highPercent: 99
       minLuminance: -4.99
-      maxLuminance: -2
+      maxLuminance: -4.44
       keyValue: 0.25
       dynamicKeyValue: 1
       adaptationType: 0
@@ -101,16 +101,16 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       bloom:
-        intensity: 2.47
+        intensity: 2.98
         threshold: 1.23
         softKnee: 0.753
-        radius: 4.74
+        radius: 2.43
         antiFlicker: 1
       lensDirt:
         texture: {fileID: 0}
         intensity: 3
   colorGrading:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       tonemapping:
         tonemapper: 2
@@ -306,10 +306,10 @@ MonoBehaviour:
       lut: {fileID: 0}
       contribution: 1
   chromaticAberration:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
-      spectralTexture: {fileID: 0}
-      intensity: 0.1
+      spectralTexture: {fileID: 2800000, guid: 094fc4bc08308d344b22955ce2ff1ce0, type: 3}
+      intensity: 0.16
   grain:
     m_Enabled: 0
     m_Settings:

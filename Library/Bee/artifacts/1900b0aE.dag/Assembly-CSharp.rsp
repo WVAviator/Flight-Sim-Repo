@@ -432,8 +432,6 @@
 "Assets/Scripts/UI Controller Scripts/Target Object Scripts/TargetObjectWraith.cs"
 "Assets/Scripts/UI Controller Scripts/TargetIndicator.cs"
 "Assets/Scripts/UI Controller Scripts/UIController.cs"
-"Assets/Scripts/UI Controller Scripts/UIControllerALLallies.cs"
-"Assets/Scripts/UI Controller Scripts/UIControllerAllyName.cs"
 "Assets/Scripts/UI Controller Scripts/UIControllerCryo.cs"
 "Assets/Scripts/UI Controller Scripts/UIControllerEmber.cs"
 "Assets/Scripts/UI Controller Scripts/UIControllerEnemy.cs"
