@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 780.8
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Project
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 29064
+  controlID: 88996
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 28973
+  controlID: 88969
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 28974
+  controlID: 88970
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -187,7 +187,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 259.2
+    width: 206.4
     height: 459.2
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
@@ -211,9 +211,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 259.2
+    x: 206.4
     y: 0
-    width: 1000.8
+    width: 1053.6
     height: 459.2
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -296,18 +296,20 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 260.2
+    x: 207.4
     y: 19
-    width: 998.8
+    width: 1051.6
     height: 438.2
   m_ViewDataDictionary: {fileID: 0}
-  m_SerializedViewNames: []
-  m_SerializedViewValues: []
+  m_SerializedViewNames:
+  - UnityEditor.DeviceSimulation.SimulatorWindow
+  m_SerializedViewValues:
+  - C:\Users\q22w2\Desktop\Flight-Sim-Repo\Library\PlayModeViewStates\3c15b0c4a4fe81d4481f36d5de0cacb0
   m_PlayModeViewName: GameView
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 998.8, y: 417.2}
+  m_TargetSize: {x: 1051.6, y: 417.2}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -387,15 +389,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73.6
-    width: 258.2
+    width: 205.4
     height: 438.2
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 82a50100
-      m_LastClickedID: 107906
-      m_ExpandedIDs: 7434fdff6e9efdffd407feffb2faffff
+      m_SelectedIDs: d2100000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 54b0f2ffa0b8f3ff528ff4ff98f2f4ff367af5ff8040faff7265faff5afefaff0478fbffbad1fbfffa2ffeffb667feffc267feffde67fefff667feff1268feff2a68feff8668feff9268feff1291feff9a95feffc097feff20c4feff841fffff669effff2afbffff0ce6000020e6000018b00c0034b20c00a85e380030a53a00
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -439,9 +441,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 259.2
+    x: 206.40001
     y: 73.6
-    width: 998.8
+    width: 1051.6
     height: 438.2
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
@@ -455,9 +457,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -36.58049, y: 481.1089, z: 1613.9545}
+    m_Target: {x: 241.66762, y: 736.4437, z: 1669.4923}
     speed: 2
-    m_Value: {x: -36.58049, y: 481.1089, z: 1613.9545}
+    m_Value: {x: 241.66762, y: 736.4437, z: 1669.4923}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -504,13 +506,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.0019696443, y: -0.9965998, z: 0.026033057, w: -0.078512594}
+    m_Target: {x: 0.021160068, y: -0.9663129, z: 0.24262321, w: 0.08363792}
     speed: 2
-    m_Value: {x: 0.0019696443, y: 0.9965998, z: -0.026033057, w: 0.078512594}
+    m_Value: {x: -0.02115933, y: 0.96627927, z: -0.24261476, w: -0.08363501}
   m_Size:
-    m_Target: 9.960901
+    m_Target: 46.840675
     speed: 2
-    m_Value: 9.960901
+    m_Value: 46.840675
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -573,22 +575,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/TargetIndicators
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Prefabs/TargetIndicators
+  - Assets/Scripts
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\q22w2\Desktop\Flight-Sim-Repo
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 221.40002}
-    m_SelectedIDs: eca50000
-    m_LastClickedID: 42476
-    m_ExpandedIDs: 00000000a2490000c249000000ca9a3b
+    scrollPos: {x: 0, y: 157.40002}
+    m_SelectedIDs: aea60000
+    m_LastClickedID: 42670
+    m_ExpandedIDs: 00000000a6a5000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -616,7 +618,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a249000000ca9a3b
+    m_ExpandedIDs: 00000000a6a5000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -644,7 +646,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c623000006ae0000f8ad0000faad0000147b00009c610000368c0000000000001e67000026670000f22208006c260800
+    m_ExpandedInstanceIDs: c623000006ae0000f8ad0000faad0000147b00009c610000368c0000000000001e67000026670000f22208006c260800ecb00000eeb00000ba5f00003ccd0000a4590000ba590000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -668,7 +670,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 4.4000244}
     m_GridSize: 16
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
@@ -693,9 +695,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 529.60004
-    width: 1049.4
-    height: 253.79999
+    y: 532.8
+    width: 1259
+    height: 250.59998
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &17
 MonoBehaviour:
