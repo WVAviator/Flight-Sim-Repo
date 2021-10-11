@@ -312,6 +312,8 @@
 -r:"C:/Users/q22w2/Desktop/Flight-Sim-Repo/Library/PackageCache/com.unity.collab-proxy@1.7.1/Lib/Editor/PlasticSCM/unityplastic.dll"
 -r:"C:/Users/q22w2/Desktop/Flight-Sim-Repo/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
 -r:"C:/Users/q22w2/Desktop/Flight-Sim-Repo/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/AIBehavior.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/AIBehaviorNav_Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor-firstpass.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-firstpass.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.ref.dll"
@@ -367,6 +369,10 @@
 "Assets/NastyWizard_Depth/Demo/PostProcessing/Editor/Utils/FxStyles.cs"
 "Assets/NastyWizard_Depth/Demo/PostProcessing/Editor/Utils/ReflectionUtils.cs"
 "Assets/NastyWizard_Depth/Water/Editor/WaterEditor.cs"
+"Assets/Scripts/Ai Scripts/AIBehavior/Editor/AIBehaviorsMadeEasy/AIBehaviorsAboutWindow.cs"
+"Assets/Scripts/Ai Scripts/AIBehavior/Editor/AIBehaviorsMadeEasy/AIBehaviorsEditor.cs"
+"Assets/Scripts/Ai Scripts/AIBehavior/Editor/AIBehaviorsMadeEasy/AIBehaviorsMenuItems.cs"
+"Assets/Scripts/Ai Scripts/AIBehavior/Editor/AIBehaviorsMadeEasy/AnimationStatesEditor.cs"
 -langversion:8.0
 
 /deterministic

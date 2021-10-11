@@ -312,6 +312,8 @@
 -r:"C:/Users/q22w2/Desktop/Flight-Sim-Repo/Library/PackageCache/com.unity.collab-proxy@1.7.1/Lib/Editor/PlasticSCM/unityplastic.dll"
 -r:"C:/Users/q22w2/Desktop/Flight-Sim-Repo/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
 -r:"C:/Users/q22w2/Desktop/Flight-Sim-Repo/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/AIBehavior.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/AIBehaviorNav_Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-firstpass.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Cinemachine.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/com.unity.cinemachine.editor.ref.dll"
