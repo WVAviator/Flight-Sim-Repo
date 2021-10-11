@@ -8183,7 +8183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbf9db670c1df4bb2843b82560ce5409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: 5b47ca1209db34047b14f65d2db913e4, type: 3}
+  icon: {fileID: 21300000, guid: 99fdc528ebe3a944290c2efa34c2499d, type: 3}
   size: {x: 20, y: 20}
   rotateWithObject: 1
   upAxis: {x: 0, y: 1, z: 0}
