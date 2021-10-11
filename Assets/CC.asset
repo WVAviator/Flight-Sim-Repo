@@ -88,8 +88,8 @@ MonoBehaviour:
     m_Settings:
       lowPercent: 49.00001
       highPercent: 99
-      minLuminance: -4.99
-      maxLuminance: -2
+      minLuminance: -81.83
+      maxLuminance: -3.27
       keyValue: 0.25
       dynamicKeyValue: 1
       adaptationType: 0
@@ -101,8 +101,8 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       bloom:
-        intensity: 0.77
-        threshold: 1.14
+        intensity: 0.28
+        threshold: 1.42
         softKnee: 0.753
         radius: 7
         antiFlicker: 1
