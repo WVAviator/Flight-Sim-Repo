@@ -1,6 +1,7 @@
 ﻿
 
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [CreateAssetMenu(menuName = "Flight/Aerodynamic Profile")]
 public class AerodynamicProperties : ScriptableObject
@@ -17,6 +18,6 @@ public class AerodynamicProperties : ScriptableObject
     [SerializeField] float speed;
     public float Speed => speed;
     
-    [SerializeField] float rotationSpeed;
-    public float RotationSpeed => rotationSpeed;
+    [SerializeField] float yaw;
+    public float Yaw => yaw;
 }
