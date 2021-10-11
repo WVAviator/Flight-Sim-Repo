@@ -400,6 +400,7 @@
 "Assets/SampleScenes/Scripts/ParticleSceneControls.cs"
 "Assets/SampleScenes/Scripts/PlaceTargetWithMouse.cs"
 "Assets/SampleScenes/Scripts/SlowMoButton.cs"
+"Assets/Scripts/Ai Scripts/AIController.cs"
 "Assets/Scripts/Ai Scripts/AllyFollowFinal.cs"
 "Assets/Scripts/Ai Scripts/Enemy Ai Scripts/EnemyAiTutorial.cs"
 "Assets/Scripts/Ai Scripts/Enemy Ai Scripts/EnemyFollow.cs"
