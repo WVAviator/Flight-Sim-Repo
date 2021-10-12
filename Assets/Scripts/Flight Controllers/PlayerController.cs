@@ -1,40 +1,42 @@
 ﻿using System;
 using UnityEngine;
 
-
-public class PlayerController : MonoBehaviour, IController
+namespace FlightSim
 {
-    public event Action<Vector3> OnFlightControlInput;
-    public event Action<bool> OnThrottleInput;
-    public event Action<bool> OnBrakeInput;
-
-    void FixedUpdate()
+    public class PlayerController : MonoBehaviour, IController
     {
-        ReadFlightControlInput();
-        ReadThrottleInput();
-        ReadBrakeInput();
-    }
+        public event Action<Vector3> OnFlightControlInput;
+        public event Action<bool> OnThrottleInput;
+        public event Action<bool> OnBrakeInput;
 
-    void ReadFlightControlInput()
-    {
-        Vector3 controlInput = Vector3.zero;
+        void FixedUpdate()
+        {
+            ReadFlightControlInput();
+            ReadThrottleInput();
+            ReadBrakeInput();
+        }
 
-        controlInput.x = Input.GetAxis("Vertical");
-        controlInput.y = Input.GetAxis("Yaw");
-        controlInput.z = Input.GetAxis("Horizontal");
+        void ReadFlightControlInput()
+        {
+            Vector3 controlInput = Vector3.zero;
 
-        OnFlightControlInput?.Invoke(controlInput);
-    }
+            controlInput.x = Input.GetAxis("Vertical");
+            controlInput.y = Input.GetAxis("Yaw");
+            controlInput.z = Input.GetAxis("Horizontal");
 
-    void ReadThrottleInput()
-    {
-        bool throttleApplied = Input.GetKey("space");
-        OnThrottleInput?.Invoke(throttleApplied);
-    }
-    
-    void ReadBrakeInput()
-    {
-        bool brakeApplied = Input.GetKey("b");
-        OnBrakeInput?.Invoke(brakeApplied);
+            OnFlightControlInput?.Invoke(controlInput);
+        }
+
+        void ReadThrottleInput()
+        {
+            bool throttleApplied = Input.GetKey("space");
+            OnThrottleInput?.Invoke(throttleApplied);
+        }
+
+        void ReadBrakeInput()
+        {
+            bool brakeApplied = Input.GetKey("b");
+            OnBrakeInput?.Invoke(brakeApplied);
+        }
     }
 }

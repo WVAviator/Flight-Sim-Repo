@@ -1,9 +1,12 @@
 using System;
 using UnityEngine;
 
-public interface IController
+namespace FlightSim
 {
-    public event Action<Vector3> OnFlightControlInput;
-    public event Action<bool> OnThrottleInput;
-    public event Action<bool> OnBrakeInput;
+    public interface IController
+    {
+        public event Action<Vector3> OnFlightControlInput;
+        public event Action<bool> OnThrottleInput;
+        public event Action<bool> OnBrakeInput;
+    }
 }

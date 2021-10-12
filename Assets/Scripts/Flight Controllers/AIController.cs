@@ -2,77 +2,80 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-public abstract class AIController : MonoBehaviour, IController
+namespace FlightSim
 {
-    public event Action<Vector3> OnFlightControlInput;
-    public event Action<bool> OnThrottleInput;
-    public event Action<bool> OnBrakeInput;
-
-    protected Vector3 targetPosition;
-    protected event Action OnReachedTarget;
-
-    Vector3 directionToTarget;
-    float angleToTarget;
-
-    bool brakeApplied;
-
-
-    [SerializeField] protected float targetRadius = 100f;
-    [SerializeField] protected float angleFromTargetToAccelerate = 28f;
-
-
-    void FixedUpdate()
+    public abstract class AIController : MonoBehaviour, IController
     {
-        directionToTarget = GetTargetDirection();
-        angleToTarget = GetAngleToTarget();
+        public event Action<Vector3> OnFlightControlInput;
+        public event Action<bool> OnThrottleInput;
+        public event Action<bool> OnBrakeInput;
 
-        OrientTowardsTarget();
-        AccelerateIfFacingTarget();
-        OnBrakeInput?.Invoke(brakeApplied);
+        protected Vector3 targetPosition;
+        protected event Action OnReachedTarget;
 
-        if (TargetWithinRange()) OnReachedTarget?.Invoke();
-    }
+        Vector3 directionToTarget;
+        float angleToTarget;
 
-    Vector3 GetTargetDirection() => (targetPosition - transform.position).normalized;
-    float GetAngleToTarget() => Vector3.Angle(transform.forward, directionToTarget);
-    bool TargetWithinRange() => (targetPosition - transform.position).sqrMagnitude < targetRadius * targetRadius;
+        bool brakeApplied;
 
 
-    void OrientTowardsTarget()
-    {
-        Vector3 torqueVector = GetTorqueVector();
-        OnFlightControlInput?.Invoke(torqueVector);
-    }
+        [SerializeField] protected float targetRadius = 100f;
+        [SerializeField] protected float angleFromTargetToAccelerate = 28f;
 
-    Vector3 GetTorqueVector()
-    {
-        Vector3 torqueVector = Vector3.Cross(transform.forward, directionToTarget);
-        torqueVector = transform.InverseTransformDirection(torqueVector);
-        torqueVector.z = -(transform.rotation.eulerAngles.z / 180 - 1 - torqueVector.y * 2);
 
-        return torqueVector;
-    }
+        void FixedUpdate()
+        {
+            directionToTarget = GetTargetDirection();
+            angleToTarget = GetAngleToTarget();
 
-    void AccelerateIfFacingTarget()
-    {
-        bool facingTarget = angleToTarget < angleFromTargetToAccelerate;
-        OnThrottleInput?.Invoke(facingTarget);
-    }
+            OrientTowardsTarget();
+            AccelerateIfFacingTarget();
+            OnBrakeInput?.Invoke(brakeApplied);
 
-    protected void Brake()
-    {
-        ApplyBrakes();
-    }
+            if (TargetWithinRange()) OnReachedTarget?.Invoke();
+        }
 
-    IEnumerator ApplyBrakes()
-    {
-        brakeApplied = true;
-        yield return new WaitForSeconds(2);
-        brakeApplied = false;
-    }
+        Vector3 GetTargetDirection() => (targetPosition - transform.position).normalized;
+        float GetAngleToTarget() => Vector3.Angle(transform.forward, directionToTarget);
+        bool TargetWithinRange() => (targetPosition - transform.position).sqrMagnitude < targetRadius * targetRadius;
 
-    void OnDrawGizmosSelected()
-    {
-        Gizmos.DrawWireSphere(targetPosition, targetRadius);
+
+        void OrientTowardsTarget()
+        {
+            Vector3 torqueVector = GetTorqueVector();
+            OnFlightControlInput?.Invoke(torqueVector);
+        }
+
+        Vector3 GetTorqueVector()
+        {
+            Vector3 torqueVector = Vector3.Cross(transform.forward, directionToTarget);
+            torqueVector = transform.InverseTransformDirection(torqueVector);
+            torqueVector.z = -(transform.rotation.eulerAngles.z / 180 - 1 - torqueVector.y * 2);
+
+            return torqueVector;
+        }
+
+        void AccelerateIfFacingTarget()
+        {
+            bool facingTarget = angleToTarget < angleFromTargetToAccelerate;
+            OnThrottleInput?.Invoke(facingTarget);
+        }
+
+        protected void Brake()
+        {
+            ApplyBrakes();
+        }
+
+        IEnumerator ApplyBrakes()
+        {
+            brakeApplied = true;
+            yield return new WaitForSeconds(2);
+            brakeApplied = false;
+        }
+
+        void OnDrawGizmosSelected()
+        {
+            Gizmos.DrawWireSphere(targetPosition, targetRadius);
+        }
     }
 }

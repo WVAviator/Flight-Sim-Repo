@@ -1,19 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class TargetObjectGardna : MonoBehaviour
+namespace FlightSim
 {
-    private void Awake()
+    public class TargetObjectGardna : MonoBehaviour
     {
-        UIControllerGardna ui = GetComponentInParent<UIControllerGardna>();
-        if (ui == null)
+        private void Awake()
         {
-            ui = GameObject.Find("World").GetComponent<UIControllerGardna>();
+            UIControllerGardna ui = GetComponentInParent<UIControllerGardna>();
+            if (ui == null)
+            {
+                ui = GameObject.Find("World").GetComponent<UIControllerGardna>();
+            }
+
+            if (ui == null) Debug.LogError("No UIControllerGardna component found");
+
+            ui.AddTargetIndicator(this.gameObject);
         }
-
-        if (ui == null) Debug.LogError("No UIControllerGardna component found");
-
-        ui.AddTargetIndicator(this.gameObject);
     }
 }
