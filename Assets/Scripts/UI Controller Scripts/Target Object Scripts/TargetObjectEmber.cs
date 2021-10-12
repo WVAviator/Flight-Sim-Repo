@@ -1,20 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class TargetObjectEmber : MonoBehaviour
+namespace FlightSim
 {
-    private void Awake()
+    public class TargetObjectEmber : MonoBehaviour
     {
-        UIControllerEmber ui = GetComponentInParent<UIControllerEmber>();
-        //UIControllerAllyName ui = GetComponentInParent<UIControllerAllyName>();
-        if (ui == null)
+        private void Awake()
         {
-            ui = GameObject.Find("World").GetComponent<UIControllerEmber>();
+            UIControllerEmber ui = GetComponentInParent<UIControllerEmber>();
+            //UIControllerAllyName ui = GetComponentInParent<UIControllerAllyName>();
+            if (ui == null)
+            {
+                ui = GameObject.Find("World").GetComponent<UIControllerEmber>();
+            }
+
+            if (ui == null) Debug.LogError("No UIControllerEmber component found");
+
+            ui.AddTargetIndicator(this.gameObject);
         }
-
-        if (ui == null) Debug.LogError("No UIControllerEmber component found");
-
-        ui.AddTargetIndicator(this.gameObject);
     }
 }

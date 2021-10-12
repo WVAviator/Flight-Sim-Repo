@@ -1,45 +1,50 @@
 using UnityEngine;
 
-public class SimpleAI : AIController
+namespace FlightSim
 {
-    [SerializeField] protected AIBoundary boundary;
-    [SerializeField] float collisionAvoidanceCheckDistance = 250;
-
-    AIState activeState;
-    public AIState ActiveState
+    public class SimpleAI : AIController
     {
-        get => activeState;
-        set
+        [SerializeField] protected AIBoundary boundary;
+        [SerializeField] float collisionAvoidanceCheckDistance = 250;
+
+        AIState activeState;
+
+        public AIState ActiveState
         {
-            activeState = value;
-            SetNewTargetPosition();
+            get => activeState;
+            set
+            {
+                activeState = value;
+                SetNewTargetPosition();
+            }
         }
-    }
 
-    void Awake()
-    {
-        boundary.SetSpawnPoint(transform.position);
-        ActiveState = new WanderState();
-        OnReachedTarget += SetNewTargetPosition;
-    }
-
-    void Update()
-    {
-        if (Physics.Raycast(new Ray(transform.position, transform.forward), collisionAvoidanceCheckDistance) &&
-            !(ActiveState is CollisionAvoidanceState))
+        void Awake()
         {
-            Brake();
-            ActiveState = new CollisionAvoidanceState(this);
+            boundary.SetSpawnPoint(transform.position);
+            ActiveState = new WanderState();
+            OnReachedTarget += SetNewTargetPosition;
         }
-    }
-    void SetTarget(Vector3 targetPos)
-    {
-        targetPosition = targetPos;
-    }
 
-    protected void SetNewTargetPosition()
-    {
-        SetTarget(ActiveState.GetNewTargetPosition(boundary));
-    }
+        void Update()
+        {
+            if (Physics.Raycast(new Ray(transform.position, transform.forward), collisionAvoidanceCheckDistance) &&
+                !(ActiveState is CollisionAvoidanceState))
+            {
+                Brake();
+                ActiveState = new CollisionAvoidanceState(this);
+            }
+        }
 
+        void SetTarget(Vector3 targetPos)
+        {
+            targetPosition = targetPos;
+        }
+
+        protected void SetNewTargetPosition()
+        {
+            SetTarget(ActiveState.GetNewTargetPosition(boundary));
+        }
+
+    }
 }

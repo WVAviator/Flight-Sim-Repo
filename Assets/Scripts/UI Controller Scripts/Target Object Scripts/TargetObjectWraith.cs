@@ -1,19 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class TargetObjectWraith : MonoBehaviour
+namespace FlightSim
 {
-    private void Awake()
+    public class TargetObjectWraith : MonoBehaviour
     {
-        UIControllerWraith ui = GetComponentInParent<UIControllerWraith>();
-        if (ui == null)
+        private void Awake()
         {
-            ui = GameObject.Find("World").GetComponent<UIControllerWraith>();
+            UIControllerWraith ui = GetComponentInParent<UIControllerWraith>();
+            if (ui == null)
+            {
+                ui = GameObject.Find("World").GetComponent<UIControllerWraith>();
+            }
+
+            if (ui == null) Debug.LogError("No UIControllerWraith component found");
+
+            ui.AddTargetIndicator(this.gameObject);
         }
-
-        if (ui == null) Debug.LogError("No UIControllerWraith component found");
-
-        ui.AddTargetIndicator(this.gameObject);
     }
 }

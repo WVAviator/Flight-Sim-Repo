@@ -2,34 +2,39 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GroundBoundary : MonoBehaviour
+namespace FlightSim
 {
-    [SerializeField] private Transform player;
-    private Rigidbody rb;
-    //public float moveSpeed = 180f;
-    public float smooth = 2.0f;
-    float pitch = 4.0f;
-    public float torque = 100f;
-    private float glide;
-    public float rotationSpeed = 100.0f;
-
-    private void FixedUpdate()
+    public class GroundBoundary : MonoBehaviour
     {
-        glide = 0f;
-        rb = GetComponent<Rigidbody>();
-    }
+        [SerializeField] private Transform player;
 
-    private void OnTriggerEnter(Collider collision)
-    {
-        float rotation = rotationSpeed;
-        rotation *= Time.deltaTime;
+        private Rigidbody rb;
 
-        if (collision.CompareTag("Terrain"))
+        //public float moveSpeed = 180f;
+        public float smooth = 2.0f;
+        float pitch = 4.0f;
+        public float torque = 100f;
+        private float glide;
+        public float rotationSpeed = 100.0f;
+
+        private void FixedUpdate()
         {
-            player.transform.Rotate((rotation * 45f), 0f, 0f);
-            //rb.MovePosition(transform.position * moveSpeed);
-            //rb.AddRelativeForce(Vector3.forward * torque);
-            rb.AddRelativeTorque(Vector3.forward * torque * pitch);
+            glide = 0f;
+            rb = GetComponent<Rigidbody>();
+        }
+
+        private void OnTriggerEnter(Collider collision)
+        {
+            float rotation = rotationSpeed;
+            rotation *= Time.deltaTime;
+
+            if (collision.CompareTag("Terrain"))
+            {
+                player.transform.Rotate((rotation * 45f), 0f, 0f);
+                //rb.MovePosition(transform.position * moveSpeed);
+                //rb.AddRelativeForce(Vector3.forward * torque);
+                rb.AddRelativeTorque(Vector3.forward * torque * pitch);
+            }
         }
     }
 }

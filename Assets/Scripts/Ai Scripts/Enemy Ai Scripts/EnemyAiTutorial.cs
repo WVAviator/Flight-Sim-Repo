@@ -2,86 +2,91 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyAiTutorial : MonoBehaviour
+namespace FlightSim
 {
-    public NavMeshAgent agent;
-
-    public Transform player;
-
-    public LayerMask whatIsGround, whatIsPlayer;
-
-    public float health;
-
-    //Patroling
-    public Vector3 walkPoint;
-    bool walkPointSet;
-    public float walkPointRange;
-
-    //Attacking
-    public float timeBetweenAttacks;
-    bool alreadyAttacked;
-    //public GameObject projectile;
-
-    //States
-    public float sightRange, attackRange;
-    public bool playerInSightRange, playerInAttackRange;
-
-    private void Awake()
+    public class EnemyAiTutorial : MonoBehaviour
     {
-        player = GameObject.Find("PlayerObj").transform;
-        agent = GetComponent<NavMeshAgent>();
-    }
+        public NavMeshAgent agent;
 
-    private void Update()
-    {
-        //Check for sight and attack range
-        playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
-        playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
+        public Transform player;
 
-        if (!playerInSightRange && !playerInAttackRange) Patroling();
-        if (playerInSightRange && !playerInAttackRange) ChasePlayer();
-        if (playerInAttackRange && playerInSightRange) AttackPlayer();
-    }
+        public LayerMask whatIsGround, whatIsPlayer;
 
-    private void Patroling()
-    {
-        if (!walkPointSet) SearchWalkPoint();
+        public float health;
 
-        if (walkPointSet)
-            agent.SetDestination(walkPoint);
+        //Patroling
+        public Vector3 walkPoint;
+        bool walkPointSet;
+        public float walkPointRange;
 
-        Vector3 distanceToWalkPoint = transform.position - walkPoint;
+        //Attacking
+        public float timeBetweenAttacks;
 
-        //Walkpoint reached
-        if (distanceToWalkPoint.magnitude < 1f)
-            walkPointSet = false;
-    }
-    private void SearchWalkPoint()
-    {
-        //Calculate random point in range
-        float randomZ = Random.Range(-walkPointRange, walkPointRange);
-        float randomX = Random.Range(-walkPointRange, walkPointRange);
+        bool alreadyAttacked;
+        //public GameObject projectile;
 
-        walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
+        //States
+        public float sightRange, attackRange;
+        public bool playerInSightRange, playerInAttackRange;
 
-        if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround))
-            walkPointSet = true;
-    }
+        private void Awake()
+        {
+            player = GameObject.Find("PlayerObj").transform;
+            agent = GetComponent<NavMeshAgent>();
+        }
 
-    private void ChasePlayer()
-    {
-        agent.SetDestination(player.position);
-    }
+        private void Update()
+        {
+            //Check for sight and attack range
+            playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
+            playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
-    private void AttackPlayer()
-    {
-        //Make sure enemy doesn't move
-        //agent.SetDestination(transform.position);
+            if (!playerInSightRange && !playerInAttackRange) Patroling();
+            if (playerInSightRange && !playerInAttackRange) ChasePlayer();
+            if (playerInAttackRange && playerInSightRange) AttackPlayer();
+        }
 
-        //transform.LookAt(player);
+        private void Patroling()
+        {
+            if (!walkPointSet) SearchWalkPoint();
 
-        //if (!alreadyAttacked)
-        //{
+            if (walkPointSet)
+                agent.SetDestination(walkPoint);
+
+            Vector3 distanceToWalkPoint = transform.position - walkPoint;
+
+            //Walkpoint reached
+            if (distanceToWalkPoint.magnitude < 1f)
+                walkPointSet = false;
+        }
+
+        private void SearchWalkPoint()
+        {
+            //Calculate random point in range
+            float randomZ = Random.Range(-walkPointRange, walkPointRange);
+            float randomX = Random.Range(-walkPointRange, walkPointRange);
+
+            walkPoint = new Vector3(transform.position.x + randomX, transform.position.y,
+                transform.position.z + randomZ);
+
+            if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround))
+                walkPointSet = true;
+        }
+
+        private void ChasePlayer()
+        {
+            agent.SetDestination(player.position);
+        }
+
+        private void AttackPlayer()
+        {
+            //Make sure enemy doesn't move
+            //agent.SetDestination(transform.position);
+
+            //transform.LookAt(player);
+
+            //if (!alreadyAttacked)
+            //{
             ///Attack code here
             //Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
             //rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
@@ -90,29 +95,30 @@ public class EnemyAiTutorial : MonoBehaviour
 
             //alreadyAttacked = true;
             //Invoke(nameof(ResetAttack), timeBetweenAttacks);
-        //}
-    //}
-    //private void ResetAttack()
-    //{
-        //alreadyAttacked = false;
-    //}
+            //}
+            //}
+            //private void ResetAttack()
+            //{
+            //alreadyAttacked = false;
+            //}
 
-    //public void TakeDamage(int damage)
-    //{
-        //health -= damage;
+            //public void TakeDamage(int damage)
+            //{
+            //health -= damage;
 
-        //if (health <= 0) Invoke(nameof(DestroyEnemy), 0.5f);
-    //}
-    //private void DestroyEnemy()
-    //{
-        //Destroy(gameObject);
-    //}
+            //if (health <= 0) Invoke(nameof(DestroyEnemy), 0.5f);
+            //}
+            //private void DestroyEnemy()
+            //{
+            //Destroy(gameObject);
+            //}
 
-    //private void OnDrawGizmosSelected()
-    //{
-        //Gizmos.color = Color.red;
-        //Gizmos.DrawWireSphere(transform.position, attackRange);
-        //Gizmos.color = Color.yellow;
-        //Gizmos.DrawWireSphere(transform.position, sightRange);
+            //private void OnDrawGizmosSelected()
+            //{
+            //Gizmos.color = Color.red;
+            //Gizmos.DrawWireSphere(transform.position, attackRange);
+            //Gizmos.color = Color.yellow;
+            //Gizmos.DrawWireSphere(transform.position, sightRange);
+        }
     }
 }

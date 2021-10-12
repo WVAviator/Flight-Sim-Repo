@@ -3,29 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIController : MonoBehaviour
+namespace FlightSim
 {
-    [SerializeField] Canvas canvas;
-
-    [SerializeField] List<TargetIndicator> targetIndicators = new List<TargetIndicator>();
-
-    [SerializeField] Camera MainCamera;
-
-    [SerializeField] GameObject TargetIndicatorPrefab;
-    
-    void Update()
+    public class UIController : MonoBehaviour
     {
-        if (targetIndicators.Count <= 0) return;
-        for (int i = 0; i < targetIndicators.Count; i++)
+        [SerializeField] Canvas canvas;
+
+        [SerializeField] List<TargetIndicator> targetIndicators = new List<TargetIndicator>();
+
+        [SerializeField] Camera MainCamera;
+
+        [SerializeField] GameObject TargetIndicatorPrefab;
+
+        void Update()
         {
-            targetIndicators[i].UpdateTargetIndicator();
+            if (targetIndicators.Count <= 0) return;
+            for (int i = 0; i < targetIndicators.Count; i++)
+            {
+                targetIndicators[i].UpdateTargetIndicator();
+            }
         }
-    }
-    public void AddTargetIndicator(GameObject target)
-    {
-        TargetIndicator indicator = Instantiate(TargetIndicatorPrefab, canvas.transform).GetComponent<TargetIndicator>();
-        indicator.InitialiseTargetIndicator(target, MainCamera, canvas);
-        targetIndicators.Add(indicator);
-    }
 
+        public void AddTargetIndicator(GameObject target)
+        {
+            TargetIndicator indicator =
+                Instantiate(TargetIndicatorPrefab, canvas.transform).GetComponent<TargetIndicator>();
+            indicator.InitialiseTargetIndicator(target, MainCamera, canvas);
+            targetIndicators.Add(indicator);
+        }
+
+    }
 }

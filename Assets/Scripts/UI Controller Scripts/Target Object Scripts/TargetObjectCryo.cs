@@ -1,20 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class TargetObjectCryo : MonoBehaviour
+namespace FlightSim
 {
-    private void Awake()
+    public class TargetObjectCryo : MonoBehaviour
     {
-        UIControllerCryo ui = GetComponentInParent<UIControllerCryo>();
-        //UIControllerAllyName ui = GetComponentInParent<UIControllerAllyName>();
-        if (ui == null)
+        private void Awake()
         {
-            ui = GameObject.Find("World").GetComponent<UIControllerCryo>();
+            UIControllerCryo ui = GetComponentInParent<UIControllerCryo>();
+            //UIControllerAllyName ui = GetComponentInParent<UIControllerAllyName>();
+            if (ui == null)
+            {
+                ui = GameObject.Find("World").GetComponent<UIControllerCryo>();
+            }
+
+            if (ui == null) Debug.LogError("No UIControllerEmberCryo component found");
+
+            ui.AddTargetIndicator(this.gameObject);
         }
-
-        if (ui == null) Debug.LogError("No UIControllerEmberCryo component found");
-
-        ui.AddTargetIndicator(this.gameObject);
     }
 }

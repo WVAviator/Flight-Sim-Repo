@@ -2,17 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerGroundRespawn : MonoBehaviour
+namespace FlightSim
 {
-    [SerializeField] private Transform player;
-    [SerializeField] private Transform respawnPoint;
- 
-    private void OnTriggerEnter(Collider other)
+    public class PlayerGroundRespawn : MonoBehaviour
     {
-        if (other.CompareTag("Player"))
+        [SerializeField] private Transform player;
+        [SerializeField] private Transform respawnPoint;
+
+        private void OnTriggerEnter(Collider other)
         {
-            player.transform.position = respawnPoint.transform.position;
-            Physics.SyncTransforms();
+            if (other.CompareTag("Player"))
+            {
+                player.transform.position = respawnPoint.transform.position;
+                Physics.SyncTransforms();
+            }
         }
     }
 }

@@ -1,19 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class TargetObjectEnemy : MonoBehaviour
+namespace FlightSim
 {
-    private void Awake()
+    public class TargetObjectEnemy : MonoBehaviour
     {
-        UIControllerEnemy ui = GetComponentInParent<UIControllerEnemy>();
-        if (ui == null)
+        private void Awake()
         {
-            ui = GameObject.Find("World").GetComponent<UIControllerEnemy>();
+            UIControllerEnemy ui = GetComponentInParent<UIControllerEnemy>();
+            if (ui == null)
+            {
+                ui = GameObject.Find("World").GetComponent<UIControllerEnemy>();
+            }
+
+            if (ui == null) Debug.LogError("No UIControllerEnemy component found");
+
+            ui.AddTargetIndicator(this.gameObject);
         }
-
-        if (ui == null) Debug.LogError("No UIControllerEnemy component found");
-
-        ui.AddTargetIndicator(this.gameObject);
     }
 }

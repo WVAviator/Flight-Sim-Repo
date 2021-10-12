@@ -2,11 +2,14 @@ using System.Collections;
 using System;
 using UnityEngine;
 
-public class WanderState : AIState
+namespace FlightSim
 {
-    public override Vector3 GetNewTargetPosition(AIBoundary bounds)
+    public class WanderState : AIState
     {
-        return bounds.GetRandomInsideBoundary();
-    }
+        public override Vector3 GetNewTargetPosition(AIBoundary bounds)
+        {
+            return bounds.GetRandomInsideBoundary();
+        }
 
+    }
 }
