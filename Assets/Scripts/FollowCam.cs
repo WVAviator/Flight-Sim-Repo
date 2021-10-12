@@ -4,33 +4,25 @@ using UnityEngine;
 
 public class FollowCam : MonoBehaviour
 {
-    public Transform target = null;
-    public Transform rig = null;
-    public Transform rig2 = null;
-    public Transform rig3 = null;
+    [SerializeField] Transform target;
+    [SerializeField] Transform rig;
+    [SerializeField] Transform rig2;
+    [SerializeField] Transform rig3;
 
-    public float distance = 10f;
-    public float rotationSpeed = 10f;
-    public float speed = 90f;
+    [SerializeField] float distance = 10f;
+    [SerializeField] float rotationSpeed = 10f;
 
     Vector3 cameraPosition;
     Vector3 smoothPosition;
     float smoothTime = 0.125f;
     float angle;
 
-    private int camType = 0;
+    int camType = 0;
 
     //Switch Camera Angles Using "C" Key On Keyboard
     void Update()
     {
-        if (Input.GetKeyDown("c"))
-        {
-            camType += 1;
-            if(camType >= 5)
-            {
-                camType = 0;
-            }
-        }
+        if (Input.GetKeyDown("c")) camType = ++camType % 5;
     }
 
     void FixedUpdate()

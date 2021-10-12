@@ -16,4 +16,4 @@ MonoBehaviour:
   reverse: 60
   thrust: 140000
   speed: 90
-  rotationSpeed: 0.01
+  yaw: 0.01

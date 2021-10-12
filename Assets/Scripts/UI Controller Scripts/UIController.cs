@@ -5,35 +5,25 @@ using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
-    public Canvas canvas;
+    [SerializeField] Canvas canvas;
 
-    public List<TargetIndicator> targetIndicators = new List<TargetIndicator>();
+    [SerializeField] List<TargetIndicator> targetIndicators = new List<TargetIndicator>();
 
-    public Camera MainCamera;
+    [SerializeField] Camera MainCamera;
 
-    public GameObject TargetIndicatorPrefab;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
+    [SerializeField] GameObject TargetIndicatorPrefab;
+    
     void Update()
     {
-        if (targetIndicators.Count > 0)
+        if (targetIndicators.Count <= 0) return;
+        for (int i = 0; i < targetIndicators.Count; i++)
         {
-            for (int i = 0; i < targetIndicators.Count; i++)
-            {
-                targetIndicators[i].UpdateTargetIndicator();
-            }
+            targetIndicators[i].UpdateTargetIndicator();
         }
     }
-
     public void AddTargetIndicator(GameObject target)
     {
-        TargetIndicator indicator = GameObject.Instantiate(TargetIndicatorPrefab, canvas.transform).GetComponent<TargetIndicator>();
+        TargetIndicator indicator = Instantiate(TargetIndicatorPrefab, canvas.transform).GetComponent<TargetIndicator>();
         indicator.InitialiseTargetIndicator(target, MainCamera, canvas);
         targetIndicators.Add(indicator);
     }
