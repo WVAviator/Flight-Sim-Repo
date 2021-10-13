@@ -3,7 +3,7 @@ using System.Diagnostics;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace FlightSim
+namespace FlightSim.AI
 {
     [Serializable]
     public class AIBoundary

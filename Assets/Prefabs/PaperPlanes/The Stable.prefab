@@ -2849,6 +2849,7 @@ GameObject:
   - component: {fileID: 8745314993971411307}
   - component: {fileID: 8745314993971411309}
   - component: {fileID: 1463059742809221198}
+  - component: {fileID: 7043499501275850551}
   m_Layer: 0
   m_Name: The Stable
   m_TagString: Player
@@ -2921,6 +2922,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aerodynamicProperties: {fileID: 11400000, guid: 566ef7ff626a23b45b07a62249158490, type: 2}
+--- !u!114 &7043499501275850551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2961848568831493677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b44a3b5dd85340da8e6dd54c343f6fa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  squadron: {fileID: 0}
+  rank: 0
 --- !u!1 &2961848569068959608
 GameObject:
   m_ObjectHideFlags: 0
