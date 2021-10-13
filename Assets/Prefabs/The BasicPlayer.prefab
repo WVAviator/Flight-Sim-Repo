@@ -686,6 +686,7 @@ GameObject:
   - component: {fileID: 5372567712528226762}
   - component: {fileID: 5372567714015447527}
   - component: {fileID: 215024941375049680}
+  - component: {fileID: -4167847550590753782}
   m_Layer: 0
   m_Name: The BasicPlayer
   m_TagString: Player
@@ -763,11 +764,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f4fc00ce22649245b6c9218cfaa0928, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  torque: 750
-  reverse: 50
-  thrust: 120000
-  speed: 90
-  rotationSpeed: 130
   aerodynamicProperties: {fileID: 11400000, guid: f01e07d1133357e4f8ba7d446ed3169b, type: 2}
 --- !u!114 &5372567714015447527
 MonoBehaviour:
@@ -800,6 +796,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba9f04bed283d2a43886722383004250, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-4167847550590753782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929847335309354635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b44a3b5dd85340da8e6dd54c343f6fa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  squadron: {fileID: 0}
+  rank: 0
 --- !u!1 &1929847335653422052
 GameObject:
   m_ObjectHideFlags: 0
