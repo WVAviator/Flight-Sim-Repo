@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   torque: 750
   reverse: 50
-  thrust: 120000
+  thrust: 50000
   speed: 45
   yaw: 130
