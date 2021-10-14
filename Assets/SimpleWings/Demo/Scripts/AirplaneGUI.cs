@@ -24,11 +24,6 @@ public class AirplaneGUI : MonoBehaviour
 		Rigidbody = GetComponent<Rigidbody>();
 	}
 
-	private void Start()
-	{
-		
-	}
-
 	private float CalculatePitchG()
 	{
 		// Angular velocity is in radians per second.
