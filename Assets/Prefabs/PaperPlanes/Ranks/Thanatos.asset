@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 496ab6afe56f4e7bbd24b308cae952af, type: 3}
-  m_Name: TestSquadron
+  m_Script: {fileID: 11500000, guid: 486d52dff9384ce082ac4ab32710ead9, type: 3}
+  m_Name: Thanatos
   m_EditorClassIdentifier: 
-  squadronName: 
-  friendlySquadrons:
-  - {fileID: 11400000, guid: 143717b01cb847b499ded3f4a6d05ab9, type: 2}
+  title: 
+  targetIndicator: {fileID: 0}
+  offScreenTargetIndicator: {fileID: 0}
+  indicatorMaterial: {fileID: 0}
