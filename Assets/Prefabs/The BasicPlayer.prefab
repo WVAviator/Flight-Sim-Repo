@@ -686,7 +686,6 @@ GameObject:
   - component: {fileID: 5372567712528226762}
   - component: {fileID: 5372567714015447527}
   - component: {fileID: 215024941375049680}
-  - component: {fileID: 4967450375218920161}
   m_Layer: 0
   m_Name: The BasicPlayer
   m_TagString: Player
@@ -796,57 +795,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba9f04bed283d2a43886722383004250, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4967450375218920161
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1929847335309354635}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f814153ff9d4d894eb20db510fe0def6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  debugMode: 1
-  positionSPEED:
-    serializedVersion: 2
-    x: 30
-    y: 40
-    width: 300
-    height: 20
-  positionTHROTTLE:
-    serializedVersion: 2
-    x: 30
-    y: 60
-    width: 300
-    height: 20
-  positionGLOAD:
-    serializedVersion: 2
-    x: 30
-    y: 80
-    width: 300
-    height: 20
-  positionBox1:
-    serializedVersion: 2
-    x: 23
-    y: 40
-    width: 210
-    height: 22
-  positionBox2:
-    serializedVersion: 2
-    x: 23
-    y: 60
-    width: 210
-    height: 22
-  positionBox3:
-    serializedVersion: 2
-    x: 23
-    y: 80
-    width: 210
-    height: 22
-  skin: {fileID: 11400000, guid: 6f4947fa66a4223468c0f830b599abc6, type: 2}
-  BoxTexture: {fileID: 0}
 --- !u!1 &1929847335653422052
 GameObject:
   m_ObjectHideFlags: 0
