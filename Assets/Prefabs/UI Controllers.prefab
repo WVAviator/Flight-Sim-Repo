@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 294506ae49def2f4fac0c8a2e6c6ea60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
+  canvas: {fileID: 223784964348424096, guid: 5dae165fffa5db54e9fa508584cc15c6, type: 3}
   targetIndicators: []
   MainCamera: {fileID: 0}
   TargetIndicatorPrefab: {fileID: 6590720228147369166, guid: 499fc258131dd0c41b521aea63126bec, type: 3}
@@ -67,7 +67,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52ef8b8adcc54e6479112805cdcdf2a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
+  canvas: {fileID: 223784964348424096, guid: 5dae165fffa5db54e9fa508584cc15c6, type: 3}
   targetIndicators: []
   MainCamera: {fileID: 0}
   TargetIndicatorPrefab: {fileID: 6590720228147369166, guid: e75f8e616afb00749b040da702f3c6e0, type: 3}
@@ -83,7 +83,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3f0164cad51dc54cbfa459e1fc65a79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
+  canvas: {fileID: 223784964348424096, guid: 5dae165fffa5db54e9fa508584cc15c6, type: 3}
   targetIndicators: []
   MainCamera: {fileID: 0}
   TargetIndicatorPrefab: {fileID: 6590720228147369166, guid: 7c503efeed4cc144eb0b39f596879d9b, type: 3}
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d520e56019c632244b25a090a82f4eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
+  canvas: {fileID: 223784964348424096, guid: 5dae165fffa5db54e9fa508584cc15c6, type: 3}
   targetIndicators: []
   MainCamera: {fileID: 0}
   TargetIndicatorPrefab: {fileID: 6590720228147369166, guid: f6400eb4cfdf07442b0e8666eac443bd, type: 3}
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fca3a1ec77431c74482096807fedbbf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
+  canvas: {fileID: 223784964348424096, guid: 5dae165fffa5db54e9fa508584cc15c6, type: 3}
   targetIndicators: []
   MainCamera: {fileID: 0}
   TargetIndicatorPrefab: {fileID: 6590720228147369166, guid: 0418fa7bb13d9f5409c03c37bef1ce7a, type: 3}
@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 333d0d2df6706a7498831ee55248ecce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
+  canvas: {fileID: 223784964348424096, guid: 5dae165fffa5db54e9fa508584cc15c6, type: 3}
   targetIndicators: []
   MainCamera: {fileID: 0}
   TargetIndicatorPrefab: {fileID: 6590720228147369166, guid: d8c7b268e4cb71046bc9ae7a8e8e3b60, type: 3}
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fed8285e6d7880243b7703695d2947fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
+  canvas: {fileID: 223784964348424096, guid: 5dae165fffa5db54e9fa508584cc15c6, type: 3}
   targetIndicators: []
   MainCamera: {fileID: 0}
   TargetIndicatorPrefab: {fileID: 6590720228147369166, guid: 9dcd6f9119a1c2e42a80000fe9472c95, type: 3}
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42b16c42eef23274f8b2b3019e0a7982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
+  canvas: {fileID: 223784964348424096, guid: 5dae165fffa5db54e9fa508584cc15c6, type: 3}
   targetIndicators: []
   MainCamera: {fileID: 0}
   TargetIndicatorPrefab: {fileID: 6590720228147369166, guid: e5b629828b0ff8140a530984c58b1275, type: 3}
@@ -179,7 +179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 857d789efdef1044a810f30b84433c8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
+  canvas: {fileID: 223784964348424096, guid: 5dae165fffa5db54e9fa508584cc15c6, type: 3}
   targetIndicators: []
   MainCamera: {fileID: 0}
   TargetIndicatorPrefab: {fileID: 6590720228147369166, guid: 28027f76efb771e48b7359b8f0d53171, type: 3}

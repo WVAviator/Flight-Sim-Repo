@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f3359a4bded458bb94532e0641e1ae3, type: 3}
   m_Name: The Stable
   m_EditorClassIdentifier: 
-  torque: 900
+  torque: 700
   reverse: 50
-  thrust: 100000
+  thrust: 55000
   speed: 45
   yaw: 90
