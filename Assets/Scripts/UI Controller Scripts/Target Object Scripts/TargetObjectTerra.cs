@@ -10,7 +10,7 @@ namespace FlightSim
             //UIControllerAllyName ui = GetComponentInParent<UIControllerAllyName>();
             if (ui == null)
             {
-                ui = GameObject.Find("World").GetComponent<UIControllerTerra>();
+                ui = GameObject.Find("UI Controllers").GetComponent<UIControllerTerra>();
             }
 
             if (ui == null) Debug.LogError("No UIControllerEmberTerra component found");

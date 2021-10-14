@@ -9,7 +9,7 @@ namespace FlightSim
             UIControllerGardna ui = GetComponentInParent<UIControllerGardna>();
             if (ui == null)
             {
-                ui = GameObject.Find("World").GetComponent<UIControllerGardna>();
+                ui = GameObject.Find("UI Controllers").GetComponent<UIControllerGardna>();
             }
 
             if (ui == null) Debug.LogError("No UIControllerGardna component found");
