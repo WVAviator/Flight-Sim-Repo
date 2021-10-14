@@ -9,7 +9,7 @@ namespace FlightSim
             UIControllerSpecter ui = GetComponentInParent<UIControllerSpecter>();
             if (ui == null)
             {
-                ui = GameObject.Find("World").GetComponent<UIControllerSpecter>();
+                ui = GameObject.Find("UI Controllers").GetComponent<UIControllerSpecter>();
             }
 
             if (ui == null) Debug.LogError("No UIControllerSpecter component found");

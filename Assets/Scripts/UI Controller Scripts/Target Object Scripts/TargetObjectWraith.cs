@@ -9,7 +9,7 @@ namespace FlightSim
             UIControllerWraith ui = GetComponentInParent<UIControllerWraith>();
             if (ui == null)
             {
-                ui = GameObject.Find("World").GetComponent<UIControllerWraith>();
+                ui = GameObject.Find("UI Controllers").GetComponent<UIControllerWraith>();
             }
 
             if (ui == null) Debug.LogError("No UIControllerWraith component found");

@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.1/release' branch; Version is '2021.1.16f1 (5fa502fca597) revision 6268162'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19042.1165; Version 2009; 64bit' Language: 'en' Physical Memory: 16298 MB
+OS: 'Windows 10 Pro; OS build 19042.1237; Version 2009; 64bit' Language: 'en' Physical Memory: 8068 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -11,407 +11,69 @@ C:\Program Files\Unity\Hub\Editor\2021.1.16f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-D:/Unity Projects/Flight-Sim-Repo
+C:/Users/q22w2/Desktop/Flight-Sim-Repo
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55558
-Successfully changed project path to: D:/Unity Projects/Flight-Sim-Repo
-D:/Unity Projects/Flight-Sim-Repo
+62024
+Successfully changed project path to: C:/Users/q22w2/Desktop/Flight-Sim-Repo
+C:/Users/q22w2/Desktop/Flight-Sim-Repo
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 59.99 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 184.80 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.16f1 (5fa502fca597)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.16f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Unity Projects/Flight-Sim-Repo/Assets
+[Subsystems] Discovering subsystems at path C:/Users/q22w2/Desktop/Flight-Sim-Repo/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1050 Ti (ID=0x1c82)
-    Vendor:   NVIDIA
-    VRAM:     4018 MB
-    Driver:   27.21.14.6589
+    Renderer: Intel(R) UHD Graphics 620 (ID=0x3ea0)
+    Vendor:   Intel
+    VRAM:     4034 MB
+    Driver:   27.20.100.8935
 Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
 Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.16f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.16f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56032
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56124
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.16f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002243 seconds.
+Registered in 0.011244 seconds.
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 60.84 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 131.78 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.340 seconds
+- Completed reload, in  7.374 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1340ms)
-		BeginReloadAssembly (58ms)
+	ReloadAssembly (7375ms)
+		BeginReloadAssembly (389ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (398ms)
-			LoadAssemblies (56ms)
+		EndReloadAssembly (1541ms)
+			LoadAssemblies (387ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (140ms)
+			SetupTypeCache (595ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (185ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (512ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (16ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (61ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (90ms)
-				ProcessInitializeOnLoadMethodAttributes (25ms)
+				RefreshPlugins (132ms)
+				BeforeProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (229ms)
+				ProcessInitializeOnLoadMethodAttributes (132ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002578 seconds.
+Registered in 0.598405 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.595 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1595ms)
-		BeginReloadAssembly (140ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (1402ms)
-			LoadAssemblies (667ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (249ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (61ms)
-			SetupLoadedEditorAssemblies (353ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (48ms)
-				ProcessInitializeOnLoadAttributes (289ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
-Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2200 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.8 MB.
-System memory in use after: 174.7 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2734.
-Total: 2.975500 ms (FindLiveObjects: 0.173000 ms CreateObjectMapping: 0.054900 ms MarkObjects: 2.473700 ms  DeleteObjects: 0.273100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  path: Assets/Prefabs/PaperPlanes/Aerodynamic Profiles/The Buzz.asset
-  artifactKey: Guid(44fda2a904ea5ed4787662e56d692add) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PaperPlanes/Aerodynamic Profiles/The Buzz.asset using Guid(44fda2a904ea5ed4787662e56d692add) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e66181bf2c246c90c158f65a02448a56') in 0.027354 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000138 seconds.
-  path: Assets/Prefabs/PaperPlanes/Aerodynamic Profiles/The Sea Glider.asset
-  artifactKey: Guid(052ec79fca119144e98891334cbb0c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PaperPlanes/Aerodynamic Profiles/The Sea Glider.asset using Guid(052ec79fca119144e98891334cbb0c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bf0d079cdd96f58ee9462af3c5c99b3') in 0.007283 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000174 seconds.
-  path: Assets/Prefabs/PaperPlanes/Aerodynamic Profiles/Hunting Flight.asset
-  artifactKey: Guid(dc9510c38e759dc43992c7f43dfbbc40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PaperPlanes/Aerodynamic Profiles/Hunting Flight.asset using Guid(dc9510c38e759dc43992c7f43dfbbc40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '163f0910f3ef93abeff74ad81db4bf3e') in 0.006932 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000149 seconds.
-  path: Assets/Prefabs/PaperPlanes/Aerodynamic Profiles/The Sprinter.asset
-  artifactKey: Guid(861be44c575c59940a0d7936b5024f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PaperPlanes/Aerodynamic Profiles/The Sprinter.asset using Guid(861be44c575c59940a0d7936b5024f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84bbb7cd6d32c1a8bab263cadacb0a61') in 0.004661 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000112 seconds.
-  path: Assets/Prefabs/PaperPlanes/Aerodynamic Profiles/The Dart.asset
-  artifactKey: Guid(fd8f70a1b1a90be45bc527c73f3e2e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PaperPlanes/Aerodynamic Profiles/The Dart.asset using Guid(fd8f70a1b1a90be45bc527c73f3e2e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4d83edebf19adcae2937949324c9057') in 0.004637 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000117 seconds.
-  path: Assets/Prefabs/PaperPlanes/Aerodynamic Profiles/The Basic.asset
-  artifactKey: Guid(f01e07d1133357e4f8ba7d446ed3169b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PaperPlanes/Aerodynamic Profiles/The Basic.asset using Guid(f01e07d1133357e4f8ba7d446ed3169b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2deaf9dd334fb17a84a183741d140d79') in 0.004897 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000107 seconds.
-  path: Assets/Prefabs/PaperPlanes/Aerodynamic Profiles/The Stable.asset
-  artifactKey: Guid(566ef7ff626a23b45b07a62249158490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PaperPlanes/Aerodynamic Profiles/The Stable.asset using Guid(566ef7ff626a23b45b07a62249158490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76ccfc4a30b44bde08ea799f02ed9713') in 0.004762 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.208770 seconds.
-  path: Assets/Prefabs/PaperPlanes/Hunting Flight.prefab
-  artifactKey: Guid(5f767191a5889824ab28e955b53421b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PaperPlanes/Hunting Flight.prefab using Guid(5f767191a5889824ab28e955b53421b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4cc306eed84c0687b9817fd56aaff61') in 0.068923 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.503810 seconds.
-  path: Assets/Prefabs/PaperPlanes/The Basic.prefab
-  artifactKey: Guid(5cbf99dd9c70ab74388a4c87768ef01e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PaperPlanes/The Basic.prefab using Guid(5cbf99dd9c70ab74388a4c87768ef01e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ef851329d9de36829884bbe2559cd03') in 0.012855 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.820768 seconds.
-  path: Assets/Prefabs/PaperPlanes/The Buzz.prefab
-  artifactKey: Guid(711d70c9b7bb5004c94d2fe1353f016f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PaperPlanes/The Buzz.prefab using Guid(711d70c9b7bb5004c94d2fe1353f016f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48cd3518f8d8e5d89cb1d6c3cbecc078') in 0.009585 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.714294 seconds.
-  path: Assets/Prefabs/PaperPlanes/The Dart.prefab
-  artifactKey: Guid(4c1559ab71f9b0f47a4ed6a1b090b767) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PaperPlanes/The Dart.prefab using Guid(4c1559ab71f9b0f47a4ed6a1b090b767) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea2ece6960d36167ab2d9ceb7933fb92') in 0.010589 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 38.350457 seconds.
-  path: Assets/Prefabs/PaperPlanes/The Sea Glider.prefab
-  artifactKey: Guid(bcc125349d690b446b3eb4eb5c570106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PaperPlanes/The Sea Glider.prefab using Guid(bcc125349d690b446b3eb4eb5c570106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd54170013be241a986ac6b3eb663939c') in 0.012419 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002510 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.944 seconds
-Domain Reload Profiling:
-	ReloadAssembly (944ms)
-		BeginReloadAssembly (108ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (30ms)
-		EndReloadAssembly (782ms)
-			LoadAssemblies (76ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (246ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (329ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (42ms)
-				ProcessInitializeOnLoadAttributes (271ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2087 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 168.5 MB.
-System memory in use after: 168.4 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2743.
-Total: 2.989500 ms (FindLiveObjects: 0.178200 ms CreateObjectMapping: 0.055400 ms MarkObjects: 2.504600 ms  DeleteObjects: 0.250500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 561.819290 seconds.
-  path: Assets/Prefabs/PaperPlanes/The Sprinter.prefab
-  artifactKey: Guid(4ee6e9ab39f47b149829d4fde66d0287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PaperPlanes/The Sprinter.prefab using Guid(4ee6e9ab39f47b149829d4fde66d0287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7168fe0b722f15a2c59dc57a739d1f9b') in 0.065444 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.082991 seconds.
-  path: Assets/Prefabs/PaperPlanes/The Stable.prefab
-  artifactKey: Guid(a869c6d2a4a54e641bffa1c7cf689aab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PaperPlanes/The Stable.prefab using Guid(a869c6d2a4a54e641bffa1c7cf689aab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdbc6e15d2b30c346424106643f3c3f0') in 0.011000 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 24.300883 seconds.
-  path: Assets/Prefabs/PaperPlanes/Aerodynamic Profiles
-  artifactKey: Guid(713997d57280c284db7d15e26d33aa17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PaperPlanes/Aerodynamic Profiles using Guid(713997d57280c284db7d15e26d33aa17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac2c72d521d21f8ec6f867f4875e2552') in 0.005124 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002695 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.931 seconds
-Domain Reload Profiling:
-	ReloadAssembly (931ms)
-		BeginReloadAssembly (106ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (765ms)
-			LoadAssemblies (78ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (244ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (321ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (41ms)
-				ProcessInitializeOnLoadAttributes (265ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2088 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 168.6 MB.
-System memory in use after: 168.5 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2747.
-Total: 2.997600 ms (FindLiveObjects: 0.173500 ms CreateObjectMapping: 0.055900 ms MarkObjects: 2.506000 ms  DeleteObjects: 0.261600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 57.157548 seconds.
-  path: Assets/Scripts/Experimental
-  artifactKey: Guid(4b02d860cfb21d141a40dff9856bb2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Experimental using Guid(4b02d860cfb21d141a40dff9856bb2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fe62cc4da8883fe0cd10a74dd974863') in 0.006835 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.243633 seconds.
-  path: Assets/Scripts/ScriptableObjects/AerodynamicProperties.cs
-  artifactKey: Guid(5f3359a4bded458bb94532e0641e1ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ScriptableObjects/AerodynamicProperties.cs using Guid(5f3359a4bded458bb94532e0641e1ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9db3e3520e851fb9e737c2994ff0e000') in 0.007351 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.172222 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.335 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1337ms)
-		BeginReloadAssembly (412ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (36ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (1ms)
-			CreateAndSetChildDomain (203ms)
-		EndReloadAssembly (859ms)
-			LoadAssemblies (128ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (276ms)
-			ReleaseScriptCaches (5ms)
-			RebuildScriptCaches (47ms)
-			SetupLoadedEditorAssemblies (351ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (42ms)
-				ProcessInitializeOnLoadAttributes (291ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2088 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 168.6 MB.
-System memory in use after: 168.5 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2749.
-Total: 6.946100 ms (FindLiveObjects: 0.199800 ms CreateObjectMapping: 0.055700 ms MarkObjects: 6.226100 ms  DeleteObjects: 0.461100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
