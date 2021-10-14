@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-namespace FlightSim
+namespace FlightSim.AI
 {
     public abstract class AIController : MonoBehaviour, IController
     {
@@ -11,12 +11,14 @@ namespace FlightSim
         public event Action<bool> OnBrakeInput;
 
         protected Vector3 targetPosition;
-        protected event Action OnReachedTarget;
+        public event Action OnReachedTarget;
 
         Vector3 directionToTarget;
         float angleToTarget;
 
         bool brakeApplied;
+
+        protected bool hasReachedTarget;
 
 
         [SerializeField] protected float targetRadius = 100f;
@@ -32,7 +34,9 @@ namespace FlightSim
             AccelerateIfFacingTarget();
             OnBrakeInput?.Invoke(brakeApplied);
 
-            if (TargetWithinRange()) OnReachedTarget?.Invoke();
+            if (!TargetWithinRange()) return;
+            OnReachedTarget?.Invoke();
+            hasReachedTarget = true;
         }
 
         Vector3 GetTargetDirection() => (targetPosition - transform.position).normalized;
@@ -63,7 +67,7 @@ namespace FlightSim
 
         protected void Brake()
         {
-            ApplyBrakes();
+            StartCoroutine(ApplyBrakes());
         }
 
         IEnumerator ApplyBrakes()
@@ -71,6 +75,12 @@ namespace FlightSim
             brakeApplied = true;
             yield return new WaitForSeconds(2);
             brakeApplied = false;
+        }
+        
+        protected void SetTarget(Vector3 targetPos)
+        {
+            hasReachedTarget = false;
+            targetPosition = targetPos;
         }
 
         void OnDrawGizmosSelected()

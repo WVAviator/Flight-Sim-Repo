@@ -7552,6 +7552,7 @@ GameObject:
   - component: {fileID: 2388776061595452941}
   - component: {fileID: 2388776061595452939}
   - component: {fileID: 2388776061595452938}
+  - component: {fileID: 7135890354229671777}
   m_Layer: 0
   m_Name: The Sprinter
   m_TagString: Player
@@ -7628,6 +7629,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aerodynamicProperties: {fileID: 11400000, guid: 861be44c575c59940a0d7936b5024f6b, type: 2}
+--- !u!114 &7135890354229671777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8169990523985721675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b44a3b5dd85340da8e6dd54c343f6fa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  squadron: {fileID: 0}
+  rank: 0
 --- !u!1 &8203800876919424532
 GameObject:
   m_ObjectHideFlags: 0
