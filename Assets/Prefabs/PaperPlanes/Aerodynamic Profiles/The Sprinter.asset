@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f3359a4bded458bb94532e0641e1ae3, type: 3}
   m_Name: The Sprinter
   m_EditorClassIdentifier: 
-  torque: 900
+  torque: 800
   reverse: 30
-  thrust: 110000
+  thrust: 60000
   speed: 80
   yaw: 90

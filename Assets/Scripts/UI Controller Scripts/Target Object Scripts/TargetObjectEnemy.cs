@@ -9,7 +9,7 @@ namespace FlightSim
             UIControllerEnemy ui = GetComponentInParent<UIControllerEnemy>();
             if (ui == null)
             {
-                ui = GameObject.Find("World").GetComponent<UIControllerEnemy>();
+                ui = GameObject.Find("UI Controllers").GetComponent<UIControllerEnemy>();
             }
 
             if (ui == null) Debug.LogError("No UIControllerEnemy component found");

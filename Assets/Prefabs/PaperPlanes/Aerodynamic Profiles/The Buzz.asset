@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f3359a4bded458bb94532e0641e1ae3, type: 3}
   m_Name: The Buzz
   m_EditorClassIdentifier: 
-  torque: 900
+  torque: 800
   reverse: 60
-  thrust: 140000
+  thrust: 48000
   speed: 90
   yaw: 0.01

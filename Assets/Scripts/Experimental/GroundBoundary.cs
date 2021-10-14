@@ -35,6 +35,11 @@ namespace FlightSim
                 //rb.AddRelativeForce(Vector3.forward * torque);
                 rb.AddRelativeTorque(Vector3.forward * torque * pitch);
             }
+            else
+            {
+                rb.AddRelativeForce(Vector3.forward * glide);
+                glide *= 0.995f;
+            }
         }
     }
 }

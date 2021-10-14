@@ -9,7 +9,7 @@ namespace FlightSim
             UIControllerThanatos ui = GetComponentInParent<UIControllerThanatos>();
             if (ui == null)
             {
-                ui = GameObject.Find("World").GetComponent<UIControllerThanatos>();
+                ui = GameObject.Find("UI Controllers").GetComponent<UIControllerThanatos>();
             }
 
             if (ui == null) Debug.LogError("No UIControllerThanatos component found");
