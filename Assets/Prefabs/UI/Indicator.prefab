@@ -50,6 +50,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0757013bd8244bf2bde6f86f6d5b4b46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onScreenIndicatorScale: {x: 1, y: 1}
+  offScreenIndicatorScale: {x: 1, y: 1}
+  onScreenIndicatorAlpha: 255
+  offScreenIndicatorAlpha: 255
 --- !u!222 &3972890664069668620
 CanvasRenderer:
   m_ObjectHideFlags: 0

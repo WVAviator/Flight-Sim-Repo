@@ -13,6 +13,12 @@ namespace FlightSim.UI
 
         RectTransform rectTransform;
 
+        [SerializeField] Vector2 onScreenIndicatorScale = Vector2.one;
+        [SerializeField] Vector2 offScreenIndicatorScale = Vector2.one;
+
+        [SerializeField] float onScreenIndicatorAlpha = 255;
+        [SerializeField] float offScreenIndicatorAlpha = 255;
+
         void Awake()
         {
             image = GetComponent<Image>();
@@ -33,9 +39,21 @@ namespace FlightSim.UI
         public void SetOnScreen()
         {
             ToggleImage(true);
+            
             rectTransform.rotation = Quaternion.identity;
+            rectTransform.localScale = onScreenIndicatorScale;
+
+            SetAlpha(onScreenIndicatorAlpha);
+            
             if (image.sprite == onScreenSprite) return;
             image.sprite = onScreenSprite;
+        }
+
+        void SetAlpha(float alpha)
+        {
+            Color imageColor = image.color;
+            imageColor.a = alpha / 255;
+            image.color = imageColor;
         }
 
         public void SetOffScreen()
@@ -43,6 +61,10 @@ namespace FlightSim.UI
             ToggleImage(true);
             rectTransform.rotation =
                 Quaternion.Euler(EdgeRotationVector(transform.position));
+            rectTransform.localScale = offScreenIndicatorScale;
+            
+            SetAlpha(offScreenIndicatorAlpha);
+            
             if (image.sprite == offScreenSprite) return;
             image.sprite = offScreenSprite;
         }
