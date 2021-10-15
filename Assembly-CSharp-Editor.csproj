@@ -11,7 +11,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace>FlightSim</RootNamespace>
+    <RootNamespace></RootNamespace>
     <ProjectGuid>{ba643da6-ad6a-9137-a764-c7d5537f27d6}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
@@ -41,6 +41,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\SimpleWings\Scripts\Editor\WingCurvesEditor.cs" />
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Editor\PropertyDrawers\GetSetDrawer.cs" />
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Editor\Models\DepthOfFieldModelEditor.cs" />
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Editor\Models\VignetteModelEditor.cs" />
@@ -74,6 +75,7 @@
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Editor\Attributes\PostProcessingModelEditorAttribute.cs" />
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Editor\PostProcessingModelEditor.cs" />
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Editor\Models\GrainModelEditor.cs" />
+     <Compile Include="Assets\SimpleWings\Scripts\Editor\SimpleWingEditor.cs" />
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Editor\PostProcessingBehaviourEditor.cs" />
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Editor\Models\EyeAdaptationModelEditor.cs" />
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Editor\Models\FogModelEditor.cs" />

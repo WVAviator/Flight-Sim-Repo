@@ -11,7 +11,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace>FlightSim</RootNamespace>
+    <RootNamespace></RootNamespace>
     <ProjectGuid>{4ef54ebc-2e8f-08d2-2931-fdd8c541bd4e}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
@@ -48,6 +48,8 @@
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\Extras\PlayMakerActions\SetHealthAmount.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\ExampleScripts\ExampleDefendScript.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
+     <Compile Include="Assets\Scripts\Flight Controllers\FlightControl.cs" />
+     <Compile Include="Assets\Scripts\NewAI\BehaviorTree\ActionNode.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\ExampleScripts\ExampleProjectile.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\Extras\PlayMakerActions\SubtractHealth.cs" />
      <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_DeleteAfterDelay.cs" />
@@ -74,19 +76,24 @@
      <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\Extras\PlayMakerActions\GetSightDistance.cs" />
      <Compile Include="Assets\Scripts\UI Controller Scripts\TargetIndicator.cs" />
+     <Compile Include="Assets\Scripts\ScriptableObjects\Squadron.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
      <Compile Include="Assets\Scripts\UI Controller Scripts\Target Object Scripts\TargetObject.cs" />
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Models\EyeAdaptationModel.cs" />
+     <Compile Include="Assets\Scripts\NewAI\RoamingAI.cs" />
      <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo.cs" />
      <Compile Include="Assets\Scripts\UI Controller Scripts\Target Object Scripts\TargetObjectThanatos.cs" />
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
+     <Compile Include="Assets\SimpleWings\Demo\Scripts\AirplaneGUI.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\AIBehaviorDemoScene\Scripts\SpaceShipCheck.cs" />
      <Compile Include="Assets\JMO Assets\WarFX\Scripts\WFX_LightFlicker.cs" />
+     <Compile Include="Assets\SimpleWings\Scripts\Wing\SimpleWing.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\ExampleScripts\ExampleCallbacks.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\Extras\PlayMakerActions\SetSightTransform.cs" />
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+     <Compile Include="Assets\SimpleWings\Demo\Scripts\Engine.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\Enemy Ai Scripts\EnemyFollow.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\ExampleScripts\ExamplePlayerBodyTarget.cs" />
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Components\VignetteComponent.cs" />
@@ -101,6 +108,7 @@
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\Standard Assets\Character Controllers\Sources\Scripts\PlatformInputController.cs" />
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Models\VignetteModel.cs" />
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Models\GrainModel.cs" />
+     <Compile Include="Assets\Scripts\ScriptableObjects\SpecialRank.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\Extras\PlayMakerActions\SetCurrentState.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\Extras\PlayMakerActions\AddHealth.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\Standard Assets\Character Controllers\Sources\Scripts\CharacterMotor.cs" />
@@ -116,32 +124,33 @@
      <Compile Include="Assets\post.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\Extras\PlayMakerActions\GetCurrentStateName.cs" />
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\PostProcessingProfile.cs" />
+     <Compile Include="Assets\Scripts\NewAI\BaseAI.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\Scenes\MultiPlayerExamples\MultiPlayerScripts\MultiPlayerLineOfSightTrigger.cs" />
-     <Compile Include="Assets\Scripts\Flight Controllers\AIBoundary.cs" />
+     <Compile Include="Assets\Scripts\NewAI\AIBoundary.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonController.cs" />
      <Compile Include="Assets\Scripts\UI Controller Scripts\UIControllerSpecter.cs" />
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Components\GrainComponent.cs" />
      <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
-     <Compile Include="Assets\Scripts\Flight Controllers\FlightControl.cs" />
-     <Compile Include="Assets\Scripts\Flight Controllers\CollisionAvoidanceState.cs" />
+     <Compile Include="Assets\Scripts\NewUI\UIIndicator.cs" />
      <Compile Include="Assets\Scripts\Flight Controllers\AIController.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\Extras\PlayMakerActions\SetCurrentStateByIndex.cs" />
      <Compile Include="Assets\Scripts\Experimental\PlayerGroundRespawn.cs" />
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\PostProcessingContext.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\ExampleScripts\CharacterMover.cs" />
-     <Compile Include="Assets\Scripts\Experimental\GroundBoundary.cs" />
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Components\MotionBlurComponent.cs" />
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
+     <Compile Include="Assets\SimpleWings\Demo\Scripts\Shooter.cs" />
      <Compile Include="Assets\Scripts\Flight Controllers\PlayerController.cs" />
      <Compile Include="Assets\Scripts\UI Controller Scripts\UIControllerTerra.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\AIBehaviorDemoScene\Scripts\EnemyRangeColorChange.cs" />
+     <Compile Include="Assets\Scripts\PaperPlane.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\Extras\Astar\MecanimAstarPathScript.cs" />
+     <Compile Include="Assets\Scripts\NewUI\IndicatorImage.cs" />
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Models\UserLutModel.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\Extras\PlayMakerActions\GetFOV.cs" />
      <Compile Include="Assets\Scripts\SpawnControl.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\AIBehaviorDemoScene\Scripts\AdjustProjectorSizeToSightDistance.cs" />
      <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDirectionTranslate.cs" />
-     <Compile Include="Assets\Scripts\Flight Controllers\AttackState.cs" />
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Components\BloomComponent.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\UI Controller Scripts\Target Object Scripts\TargetObjectTerra.cs" />
@@ -150,8 +159,11 @@
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\AIBehaviorDemoScene\Scripts\RotationOscillator.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\ExampleScripts\SceneGenerator.cs" />
+     <Compile Include="Assets\Scripts\NewAI\BehaviorTree\Sequence.cs" />
+     <Compile Include="Assets\SimpleWings\Scripts\Wing\ControlSurface.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\Extras\PlayMakerActions\GetCurrentDestination.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\Extras\PlayMakerActions\GetUseSightFalloff.cs" />
+     <Compile Include="Assets\Scripts\NewAI\BehaviorTree\Node.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\ExampleScripts\ProjectileCollider.cs" />
      <Compile Include="Assets\JMO Assets\WarFX\Scripts\WFX_BulletHoleDecal.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\ExampleScripts\Crosshairs.cs" />
@@ -161,7 +173,6 @@
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\Extras\PlayMakerActions\GetStateByName.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\Extras\Astar\AstarCharacterController.cs" />
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Components\UserLutComponent.cs" />
-     <Compile Include="Assets\Scripts\Flight Controllers\SimpleAI.cs" />
      <Compile Include="Assets\Scripts\UI Controller Scripts\UIControllerEnemy.cs" />
      <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDir.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\Extras\PlayMakerActions\GetHealthAmount.cs" />
@@ -179,8 +190,8 @@
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\ExampleScripts\PlayerStats.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\Extras\PlayMakerActions\GetSightDirection.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\AIBehaviorDemoScene\Scripts\Rotator.cs" />
+     <Compile Include="Assets\SimpleWings\Demo\Scripts\GearVisuals.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\Extras\PlayMakerActions\GetIsDefending.cs" />
-     <Compile Include="Assets\Scripts\Flight Controllers\CombatAI.cs" />
      <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_Wall.cs" />
      <Compile Include="Assets\Scripts\UI Controller Scripts\UIController.cs" />
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
@@ -196,7 +207,7 @@
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\Extras\PlayMakerActions\GetMaxHealthAmount.cs" />
      <Compile Include="Assets\Scripts\FollowCam.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\ExampleScripts\Shooter.cs" />
-     <Compile Include="Assets\Scripts\Flight Controllers\WanderState.cs" />
+     <Compile Include="Assets\Scripts\NewAI\BehaviorTree\Selector.cs" />
      <Compile Include="Assets\Scripts\ScriptableObjects\AerodynamicProperties.cs" />
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Components\EyeAdaptationComponent.cs" />
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
@@ -208,36 +219,42 @@
      <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_New.cs" />
      <Compile Include="Assets\Scripts\UI Controller Scripts\Target Object Scripts\TargetObjectWraith.cs" />
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
+     <Compile Include="Assets\SimpleWings\Demo\Scripts\LookAt.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\Extras\PlayMakerActions\GetSightPosition.cs" />
      <Compile Include="Assets\Scripts\Flight Controllers\IController.cs" />
+     <Compile Include="Assets\SimpleWings\Demo\Scripts\HeadsUpDisplay.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\Standard Assets\Character Controllers\Sources\Scripts\FPSInputController.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\Extras\PlayMakerActions\GetIsActive.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\Extras\PlayMakerActions\SetCurrentStateByName.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\ExampleScripts\SetPatrolPoints.cs" />
+     <Compile Include="Assets\Scripts\Utilities\KDTree.cs" />
      <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightFlicker.cs" />
      <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_AutoDestructShuriken.cs" />
      <Compile Include="Assets\Scripts\UI Controller Scripts\UIControllerCryo.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\Scenes\MultiPlayerExamples\MultiPlayerScripts\CustomNoPlayerInSightTrigger.cs" />
+     <Compile Include="Assets\SimpleWings\Demo\Scripts\WeaponDropper.cs" />
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Components\FogComponent.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\ExampleScripts\ExampleLaserAttackComponent.cs" />
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Models\BloomModel.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\Extras\PlayMakerActions\AIPlayMakerActionBase.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\Extras\PlayMakerActions\GetKeepAgentUpright.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\Extras\PlayMakerActions\GetStateByIndex.cs" />
+     <Compile Include="Assets\Scripts\NewUI\UIManager.cs" />
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
+     <Compile Include="Assets\SimpleWings\Demo\Scripts\Weapon.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AllyFollowFinal.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
      <Compile Include="Assets\Scripts\UI Controller Scripts\Target Object Scripts\TargetObjectEmber.cs" />
-     <Compile Include="Assets\Scripts\Flight Controllers\FormationState.cs" />
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
+     <Compile Include="Assets\Scripts\NewAI\ComplexAI.cs" />
      <Compile Include="Assets\MainMenu.cs" />
+     <Compile Include="Assets\SimpleWings\Scripts\Wing\WingCurves.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\Extras\PlayMakerActions\SetUseSightTransform.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\ExampleScripts\MoveUpAndDown.cs" />
      <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_New.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\ExampleScripts\ExampleGotHitComponent.cs" />
      <Compile Include="Assets\NastyWizard_Depth\Demo\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
-     <Compile Include="Assets\Scripts\Flight Controllers\AIState.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\Extras\PlayMakerActions\GetStateCount.cs" />
      <Compile Include="Assets\Scripts\UI Controller Scripts\Target Object Scripts\TargetObjectSpecter.cs" />
      <Compile Include="Assets\Scripts\Ai Scripts\AIBehavior\AIBehaviorDemoScene\Scripts\GameManager.cs" />
