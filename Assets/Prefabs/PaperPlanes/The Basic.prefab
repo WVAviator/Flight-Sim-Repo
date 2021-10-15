@@ -2420,9 +2420,9 @@ GameObject:
   - component: {fileID: 5784592467667329126}
   - component: {fileID: 714432291}
   - component: {fileID: 714432293}
-  - component: {fileID: 4934348957652286973}
   - component: {fileID: 1048668360065285254}
   - component: {fileID: 7196995509685087809}
+  - component: {fileID: 6631080864676519824}
   m_Layer: 0
   m_Name: The Basic
   m_TagString: Player
@@ -2483,19 +2483,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4934348957652286973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5784592467667329125}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f4fc00ce22649245b6c9218cfaa0928, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  aerodynamicProperties: {fileID: 11400000, guid: f01e07d1133357e4f8ba7d446ed3169b, type: 2}
 --- !u!114 &1048668360065285254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2523,6 +2510,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97f5f79c9363493c93bd1474ad4c3b42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6631080864676519824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5784592467667329125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d4f53fab7d14617b10b66a5e1a6b893, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aerodynamicProperties: {fileID: 11400000, guid: f01e07d1133357e4f8ba7d446ed3169b, type: 2}
 --- !u!1 &5784592467733660657
 GameObject:
   m_ObjectHideFlags: 0

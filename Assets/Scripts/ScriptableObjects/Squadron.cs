@@ -12,5 +12,11 @@ namespace FlightSim
 
         public List<Squadron> FriendlySquadrons => friendlySquadrons;
         [SerializeField] List<Squadron> friendlySquadrons;
+
+        public bool ShouldOverrideUIColor => shouldOverrideUIColor;
+        [SerializeField] bool shouldOverrideUIColor;
+
+        public Color OverrideColor => overrideColor;
+        [SerializeField] Color overrideColor;
     }
 }

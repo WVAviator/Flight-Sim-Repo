@@ -8525,9 +8525,9 @@ GameObject:
   - component: {fileID: 8957533601513137164}
   - component: {fileID: 3172941425280260937}
   - component: {fileID: 3172941425280260943}
-  - component: {fileID: -1104553150318510219}
   - component: {fileID: 1145228065230817966}
   - component: {fileID: 4105647647442475223}
+  - component: {fileID: 362055367517019310}
   m_Layer: 0
   m_Name: Hunting Flight
   m_TagString: Enemy3
@@ -8590,19 +8590,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-1104553150318510219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8957533601513137167}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f4fc00ce22649245b6c9218cfaa0928, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  aerodynamicProperties: {fileID: 11400000, guid: dc9510c38e759dc43992c7f43dfbbc40, type: 2}
 --- !u!114 &1145228065230817966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8630,6 +8617,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97f5f79c9363493c93bd1474ad4c3b42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &362055367517019310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8957533601513137167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d4f53fab7d14617b10b66a5e1a6b893, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aerodynamicProperties: {fileID: 11400000, guid: dc9510c38e759dc43992c7f43dfbbc40, type: 2}
 --- !u!1 &9004928965923248976
 GameObject:
   m_ObjectHideFlags: 0

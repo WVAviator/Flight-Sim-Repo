@@ -6465,9 +6465,9 @@ GameObject:
   - component: {fileID: 7335671376384868963}
   - component: {fileID: 3858048259960913190}
   - component: {fileID: 3858048259960913184}
-  - component: {fileID: 3858048259960913185}
   - component: {fileID: -1648015247530747496}
   - component: {fileID: 6266106117706937247}
+  - component: {fileID: 1404802344216867077}
   m_Layer: 0
   m_Name: The Sea Glider
   m_TagString: Player
@@ -6529,19 +6529,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3858048259960913185
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7335671376384868960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f4fc00ce22649245b6c9218cfaa0928, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  aerodynamicProperties: {fileID: 11400000, guid: 052ec79fca119144e98891334cbb0c44, type: 2}
 --- !u!114 &-1648015247530747496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6569,6 +6556,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97f5f79c9363493c93bd1474ad4c3b42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1404802344216867077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7335671376384868960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d4f53fab7d14617b10b66a5e1a6b893, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aerodynamicProperties: {fileID: 11400000, guid: 052ec79fca119144e98891334cbb0c44, type: 2}
 --- !u!1 &7335671376393237904
 GameObject:
   m_ObjectHideFlags: 0

@@ -7551,9 +7551,9 @@ GameObject:
   - component: {fileID: 8169990523985721672}
   - component: {fileID: 2388776061595452941}
   - component: {fileID: 2388776061595452939}
-  - component: {fileID: 2388776061595452938}
   - component: {fileID: 7135890354229671777}
   - component: {fileID: 9032808259418458980}
+  - component: {fileID: 5317327537967651374}
   m_Layer: 0
   m_Name: The Sprinter
   m_TagString: Player
@@ -7617,19 +7617,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2388776061595452938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8169990523985721675}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f4fc00ce22649245b6c9218cfaa0928, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  aerodynamicProperties: {fileID: 11400000, guid: 861be44c575c59940a0d7936b5024f6b, type: 2}
 --- !u!114 &7135890354229671777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7657,6 +7644,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97f5f79c9363493c93bd1474ad4c3b42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5317327537967651374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8169990523985721675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d4f53fab7d14617b10b66a5e1a6b893, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aerodynamicProperties: {fileID: 11400000, guid: 861be44c575c59940a0d7936b5024f6b, type: 2}
 --- !u!1 &8203800876919424532
 GameObject:
   m_ObjectHideFlags: 0

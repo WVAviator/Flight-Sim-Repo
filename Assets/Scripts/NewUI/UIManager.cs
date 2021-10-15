@@ -31,6 +31,8 @@ namespace FlightSim.UI
 
         public Color GetColor(PaperPlane plane)
         {
+            if (plane.Squadron.ShouldOverrideUIColor) return plane.Squadron.OverrideColor;
+
             if (player.Squadron == plane.Squadron) return allyColor;
             if (player.Squadron.FriendlySquadrons.Contains(plane.Squadron)
                 || plane.Squadron.FriendlySquadrons.Contains(player.Squadron)) return neutralColor;
